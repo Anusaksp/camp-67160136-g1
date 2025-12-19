@@ -146,10 +146,10 @@
 </div>
 
 <div class="row mt-5">
-    <div class="col">
+    <div class="col d-flex justify-content-center">
         <button type="reset" class="btn btn-light">Reset</button>
     </div>
-    <div class="col">
+    <div class="col d-flex justify-content-center">
         <button type="submit" class="btn btn-success">Submit</button>
     </div>
 </div>
