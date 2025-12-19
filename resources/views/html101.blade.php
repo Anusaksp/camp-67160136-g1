@@ -6,7 +6,7 @@
 @section('content')
 <h1>Workshop #HTML - FORM</h1>
 
-<form action="#" method="POST" enctype="multipart/form-data" novalidate>
+<form action="/mycontroller" method="POST" enctype="multipart/form-data" novalidate>
 @csrf
 <div class="row mt-3">
     <div class="col-sm-12 col-md-4">
@@ -78,8 +78,8 @@
         <label for="profilePic">รูป</label>
     </div>
     <div class="col">
-        <input class="form-control" type="file" id="profilePic" name="profile_picture" required>
-        <div class="invalid-feedback">โปรดเลือกรูป</div>
+        <input class="form-control" type="file" id="profilePic" name="profile_picture" >
+        {{-- <div class="invalid-feedback">โปรดเลือกรูป</div> --}}
     </div>
 </div>
 
@@ -153,7 +153,6 @@
         <button type="submit" class="btn btn-success">Submit</button>
     </div>
 </div>
-</form>
 @endsection
 
 @push('scripts')

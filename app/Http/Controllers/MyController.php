@@ -16,8 +16,8 @@ class MyController extends Controller
 
     }
 
-    function index(){
-        return view('myviews.index');
+    function index(Request $request){
+        return view('myviews.index', compact('request'));
         //return '<h1>My Controller</h1>';
     }
 
@@ -30,4 +30,5 @@ class MyController extends Controller
         $data['num'] = $req->input('mynumber');
         return view('myviews.calculate', $data);
     }
+
 }
