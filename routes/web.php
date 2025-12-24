@@ -12,5 +12,6 @@ Route::get('/se', function () {
 Route::post('/mycontroller', [App\Http\Controllers\MyController::class, 'index'])->name('mycontroller');
 Route::get('/calculate', [App\Http\Controllers\MyController::class, 'info']);
 Route::post('/calculate', [App\Http\Controllers\MyController::class, 'calculate']);
+Route::get('/pokedex', [App\Http\Controllers\MyController::class, 'pokedex']);
 
 

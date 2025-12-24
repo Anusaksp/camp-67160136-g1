@@ -31,4 +31,8 @@ class MyController extends Controller
         return view('myviews.calculate', $data);
     }
 
+    function pokedex(){
+        return view('myviews.pokedex');
+    }
+
 }

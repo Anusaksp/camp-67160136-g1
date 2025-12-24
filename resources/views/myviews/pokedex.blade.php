@@ -1,10 +1,10 @@
 @extends('template.default')
 
-@section('title','Workshop')
-@section('header','Workshop #HTML - FORM')
+@section('title','Pokedex')
+@section('header','Pokedex')
 
 @section('content')
-<h1>Workshop #HTML - FORM</h1>
+<h1>Pokedex</h1>
 
 <form action="/mycontroller" method="POST" enctype="multipart/form-data" novalidate>
 @csrf
