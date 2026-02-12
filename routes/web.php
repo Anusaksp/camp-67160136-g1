@@ -12,6 +12,11 @@ Route::get('/se', function () {
 Route::post('/mycontroller', [App\Http\Controllers\MyController::class, 'index'])->name('mycontroller');
 Route::get('/calculate', [App\Http\Controllers\MyController::class, 'info']);
 Route::post('/calculate', [App\Http\Controllers\MyController::class, 'calculate']);
-Route::get('/pokedex', [App\Http\Controllers\MyController::class, 'pokedex']);
+
+
+
+Route::resource('/flights', App\Http\Controllers\FlightController::class);
+Route::resource('/pokeballs', App\Http\Controllers\PokeballController::class);
+//Route::get('/pokedex', [App\Http\Controllers\MyController::class, 'pokedex']);
 
 
